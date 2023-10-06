@@ -1,0 +1,40 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    position:sticky;
+    margin:30px;
+    gap: 50px;
+
+}
+.logoimg{
+    width:100px;
+}
+body{
+    background-color: black;
+}
+.navcont{
+    border: 1px solid black; 
+    margin-right:20px; 
+    border-radius: 20px; 
+    padding:5px; 
+    text-align: center;
+}
+.bigimg{
+    background-image: url('/img/background.png');
+    height: 400px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    text-align: start;
+  }
+  .footerb {
+    display: flex;
+  
+    gap: 20px;
+  }
+  .footera{
+    display: flex; 
+    justify-content:space-between ;
+  }
+  
