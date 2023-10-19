@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeDiv(){
+            document.getElementById("div").innerHTML="!!You changed the div!!"
+        }
+        function changePicture(){
+            document.getElementById("img").src=("pic2.jpg");
+        }
+        function changelink(){
+            document.getElementById("link").setAttribute("href", "https://www.google.co.uk/");
+        }
+    </script>
+</head>
+<body>
+    <div id="div">This is the div</div>
+    <button onclick="changeDiv()">Click here to change div text</button>
+
+    <br><br><br><br><br>
+
+<img src="pic1.jpg" width="100px" height="100px" id="img">
+<button onclick="changePicture()">Click here to change picture </button>
+
+<br><br><br><br><br>
+<a href="https://www.w3schools.com/js/js_htmldom_methods.asp" id="link"> Link</a>
+<button onclick="changelink()">Click here to change address </button>
+</body>
+</html>
