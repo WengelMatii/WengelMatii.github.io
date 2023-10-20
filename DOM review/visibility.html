@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<script>
+   function vis(){
+    para=document.getElementById("myp");
+    if(para.style.visibility==="hidden"){
+        para.style.visibility="visible"
+    }else{
+        para.style.visibility="hidden"
+    }
+    }
+    function visbox(){
+        boox=document.getElementById("tbox")
+        if(boox.style.visibility==="visible"){
+            boox.style.visibility="hidden"
+        }
+        else{
+            boox.style.visibility="visible"
+        }
+    }
+</script>  
+</head>
+  <body>
+    <div>Display</div>
+    <p id="myp">Bananas are yellow in color.</p>
+    <button onclick="vis()">Hide/show</button>
+    <br> <br>
+    <div>Visibility</div>
+    <input type="text" id="tbox"> <button onclick="visbox()">hide/show</button>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function oncheck(){
+        ch1=document.getElementById("ch1")
+        ch2=document.getElementById('ch2')
+        ch1.checked=false;
+        ch2.checked=false;
+     }   
+    </script>
+</head>
+<body>
+   <input type="checkbox" name="ch1" id="ch1" > <label for="ch1">hello</label>
+   <input type="radio" name="ra1" id="ch2"><label for="ra1">hi</label>
+    <button onclick="oncheck()"> uncheck</button>
+</body>
+</html>
