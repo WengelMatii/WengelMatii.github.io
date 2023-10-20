@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Entry Page</title>
+</head>
+<body>
+    <h1>Text Entry</h1>
+    <textarea id="textEntry" rows="4" cols="50" placeholder="Enter text"></textarea>
+    <button onclick="addToEntries()">Submit</button>
+    <div id="entryDisplay">
+        <h2>PREVIOUS ENTRIES</h2>
+        <p id="entriesText"></p>
+    </div>
+
+    <script>
+        function addToEntries() {
+    const textArea = document.getElementById("textEntry");
+    const entriesText = document.getElementById("entriesText");
+
+    // Get the current text from the textarea
+    const newText = textArea.value;
+
+    // Get the existing text from the "entriesText" paragraph
+    const existingText = entriesText.textContent;
+
+    // Combine the new text with the existing text, separated by a newline character
+    const combinedText = existingText + ' ' + newText;
+   
+
+    // Update the "entriesText" paragraph with the combined text
+    entriesText.textContent = combinedText;
+
+    // Clear the textarea for the next entry
+    textArea.value = "";
+}
+
+        
+    </script>
+</body>
+</html>

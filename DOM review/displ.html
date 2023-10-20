@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function cha() {
+        op1=document.getElementById("colorselect");
+      selected=op1.value
+        if(selected=='yellow'){
+          document.getElementById("p1").style.color=('yellow')
+
+        }
+        if(selected=='dark'){
+          document.getElementById("p2").style.color=('aqua')
+        }
+
+
+      }
+    </script>
+  </head>
+  <body>
+    <select name="" id="colorselect">
+      <option value="yellow" id="op1">yellow</option>
+      <option value="dark" id="op2">dark</option>
+    </select>
+    <p id="p1">Bananas are yellow in color</p>
+    <p id="p2">black is beautiful</p>
+    <button onclick="cha()">Change color</button>
+  </body>
+</html>
