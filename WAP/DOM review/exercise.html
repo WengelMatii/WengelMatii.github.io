@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeDiv(){
+            document.getElementById("div").innerHTML="!!You changed the div!!"
+        }
+        function changePicture(){
+            document.getElementById("img").src=("pic2.jpg");
+        }
+        function changelink(){
+            document.getElementById("link").setAttribute("href", "https://www.google.co.uk/");
+        }
+        function changeinputares(){
+            document.getElementById("area").value="!!You changed the input text!!"
+        }
+        function textinput(){
+            document.getElementById("textinput").value="!!changed!!"
+        }
+    </script>
+</head>
+<body>
+ <pre style="background-color: pink;font-size: xx-large;">                            BASIC PRACTISE </pre>    
+    <br><br><br>
+    <!-- <label >#1</label> -->
+    <div id="div">This is the div</div>
+    <button onclick="changeDiv()">Click here to change div text</button>
+
+    <br><br><br><br><br>
+
+<img src="pic1.jpg" width="100px" height="100px" id="img">
+<button onclick="changePicture()">Click here to change picture </button>
+
+<br><br><br><br><br>
+<a href="https://www.w3schools.com/js/js_htmldom_methods.asp" id="link"> Link</a>
+<button onclick="changelink()">Click here to change address </button>
+<br><br><br>
+<textarea name="area" id="area" cols="30" rows="10" placeholder="This is the placeholder'please feel free to enter a text :)'"></textarea>
+<button onclick="changeinputares()">Click here to change the input </button>
+<br><br><br>
+<input id="textinput" type="text" value="value of text input">
+<button onclick="textinput()"> click here to change the value</button>
+
+
+
+
+
+
+</body>
+</html>

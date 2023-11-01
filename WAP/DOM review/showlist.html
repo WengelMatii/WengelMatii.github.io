@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        function show(){
+        selected=document.getElementById("selected")
+        diva=document.getElementById("oned")
+        divb=document.getElementById("twod")
+
+
+        if(selected.value=="Vedas"){
+            diva.style.visibility=("hidden")
+            divb.style.visibility=("visible")
+        }
+         if (selected.value=="Upanishads"){
+            divb.style.visibility=("hidden")
+            diva.style.visibility=("visible")
+            
+        }
+    }
+    </script>
+  </head>
+  <body>
+    <label for="">Scriptures</label>
+    <select name="selected" id="selected">
+      <option value="Vedas">Vedas</option>
+      <option value="Upanishads">Upanishads</option>
+    </select>
+    <button onclick="show()">Show</button>
+    <div id="oned">
+      <input type="checkbox" name="Aiterya" id="" />Aiterya
+      <input type="checkbox" name="Brihadarankya" id="" />Brihadarankya
+      <input type="checkbox" name="Chandogya" id="" />Chandogya
+      <input type="checkbox" name="Mandukya" id="" />Mandukya
+    </div>
+    <div id="twod">
+      <input type="checkbox" name="Rig" id="" />Rig
+      <input type="checkbox" name="Yajur" id="" />Yajur
+      <input type="checkbox" name="Adarvana" id="" />Adarvana
+      <input type="checkbox" name="Sama" id="" />Sama
+    </div>
+  </body>
+</html>
